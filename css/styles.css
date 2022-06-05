@@ -90,6 +90,10 @@ address {
 
 /* навигация */
 
+.header {
+    border-bottom: 1px solid var(--border-cl);
+}
+
 .header-container {
     display: flex;
     align-items: center;
@@ -116,23 +120,21 @@ address {
     color: var(--accent-txt-cl);
 }
 
-.header {
-    border-bottom: 1px solid var(--border-cl);
-}
 
-.list-item {
+
+.site-nav {
     display: flex;
 }
 
-.item {
+.site-nav__item {
     margin-right: 50px;
 }
 
-.item:last-child {
+.site-nav__item:last-child {
     margin-right: 0;
 }
 
-.nav-link {
+.site-nav__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -145,12 +147,12 @@ address {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.next {
+.site-nav__link--next {
     display: block;
     position: relative;
 }
 
-.next::after {
+.site-nav__link--next::after {
     content: "";
 
     position: absolute;
@@ -165,18 +167,18 @@ address {
     transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.next:hover::after,
-.next:focus::after {
+.site-nav__link--next:hover::after,
+.site-nav__link--next:focus::after {
     opacity: 1;
 
 }
 
-.current {
+.site-nav__link--current {
     position: relative;
     color: var(--accent-txt-cl);
 }
 
-.current::after {
+.site-nav__link--current::after {
     content: "";
     border-radius: 2px;
     position: absolute;
