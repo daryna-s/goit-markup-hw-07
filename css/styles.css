@@ -90,16 +90,16 @@ address {
 
 /* навигация */
 
-.header {
+.page-header {
     border-bottom: 1px solid var(--border-cl);
 }
 
-.header-container {
+.page-header__container {
     display: flex;
     align-items: center;
 }
 
-.header-logo {
+.page-header__header-logo {
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
@@ -109,7 +109,7 @@ address {
     color: var(--next1-txt-cl);
 }
 
-.logo-up {
+.page-header__logo-up {
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
@@ -119,8 +119,6 @@ address {
 
     color: var(--accent-txt-cl);
 }
-
-
 
 .site-nav {
     display: flex;
@@ -196,25 +194,25 @@ address {
     color: var(--accent-txt-cl);
 }
 
-.nav-list {
+.site-contacts {
     display: flex;
     margin-left: auto;
 }
 
-.contacts-list {
+.site-contacts__item {
     margin-right: 50px;
 }
 
-.contacts-list:last-child {
+.site-contacts__item:last-child {
     margin-right: 0;
 }
 
-.nav-contact:hover,
-.nav-contact:focus {
+.site-contacts__link:hover,
+.site-contacts__link:focus {
     color: var(--accent-txt-cl);
 }
 
-.nav-contact {
+.site-contacts__link {
     display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -229,7 +227,7 @@ address {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-icon {
+.site-contacts__icon {
     display: flex;
     align-items: center;
     fill: currentColor;
