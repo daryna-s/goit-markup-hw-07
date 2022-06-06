@@ -924,7 +924,7 @@ address {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form__checkbox:checked+.form__check {
+.form__input-checkbox:checked+.form__check {
     background-size: contain;
     background-origin: content-box;
     border: none;
@@ -932,7 +932,7 @@ address {
     --color2: #fff;
 }
 
-.form__checkbox:focus+.form__check {
+.form__input-checkbox:focus+.form__check {
     border-color: var(--accent-bg-cl);
 }
 
